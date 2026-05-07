@@ -52,7 +52,6 @@
     }
     .section-subtitle { text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto 50px; }
 
-    /* Reveal Animation */
     .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
     .reveal.active { opacity: 1; transform: translateY(0); }
 
@@ -86,7 +85,6 @@
     .hero p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 35px; }
     .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
 
-    /* Floating Background Elements */
     .floating-shape {
       position: absolute; border-radius: 50%; opacity: 0.1; animation: float 15s infinite ease-in-out;
     }
@@ -232,7 +230,6 @@
         <div class="skill-card reveal"><div class="skill-icon" style="color:#e34c26"><i class="fab fa-html5"></i></div><h3>HTML5</h3></div>
         <div class="skill-card reveal"><div class="skill-icon" style="color:#264de4"><i class="fab fa-css3-alt"></i></div><h3>CSS3</h3></div>
         <div class="skill-card reveal"><div class="skill-icon" style="color:#f0db4f"><i class="fab fa-js"></i></div><h3>JavaScript</h3></div>
-        <div class="skill-card reveal"><div class="skill-icon" style="color:#007396"><i class="fab fa-java"></i></div><h3>Java</h3></div>
         <div class="skill-card reveal"><div class="skill-icon" style="color:#06b6d4"><i class="fas fa-mobile-alt"></i></div><h3>Responsive</h3></div>
         <div class="skill-card reveal"><div class="skill-icon" style="color:#8b5cf6"><i class="fas fa-th"></i></div><h3>CSS Grid</h3></div>
         <div class="skill-card reveal"><div class="skill-icon" style="color:#10b981"><i class="fas fa-columns"></i></div><h3>Flexbox</h3></div>
@@ -246,19 +243,19 @@
       <h2 class="section-title reveal">Featured Projects</h2>
       <p class="section-subtitle reveal">A selection of my recent work and experiments</p>
       <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card reveal">
+
+         <div class="project-card reveal">
           <div class="project-img"><i class="fas fa-plane-departure"></i></div>
           <div class="project-content">
             <h3>Flight Management System</h3>
             <p>Full-stack web app with Java backend, user auth, and real-time tracking.</p>
             <div class="tech-tags"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">Java</span><span class="tech-tag">MySQL</span></div>
             <div class="project-links">
-              <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/mong-web/flight-management-java" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
+
         <div class="project-card reveal">
           <div class="project-img"><i class="fas fa-store"></i></div>
           <div class="project-content">
@@ -266,8 +263,10 @@
             <p>Modern, responsive agency site with smooth animations and contact form.</p>
             <div class="tech-tags"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JS</span><span class="tech-tag">Formspree</span></div>
             <div class="project-links">
-              <a href="https://github.com/mong-web/business-landing-page" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://super-dodol-d0549a.netlify.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/mong-web/business-landing-page" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://nexorabusiness.netlify.app/" title="Live Demo" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -279,8 +278,8 @@
             <p>Dynamic product page with cart functionality and responsive layout.</p>
             <div class="tech-tags"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span></div>
             <div class="project-links">
-              <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/mong-web/ecommerce-product-page" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://mong-ecommerce-product.netlify.app/" title="Live Demo" target="_blank"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
         </div>
@@ -296,10 +295,10 @@
         <div class="contact-info">
           <h3>Contact Info</h3>
           <p>I'm always open to discussing new projects, creative ideas, or opportunities.</p>
-          <div class="contact-item"><i class="fas fa-envelope"></i><span>mongswechaim@gmail.com</span></div>
+          <div class="contact-item"><i class="fas fa-envelope"></i><span><a href="mailto:mongswechaim@gmail.com" target="_blank">mongswechaim@gmail.com</a></span></div>
           <div class="contact-item"><i class="fas fa-phone"></i><span>+880 1820 558351</span></div>
           <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Chittagong, Bangladesh</span></div>
-          <div class="contact-item"><i class="fab fa-fiverr"></i><span><a href="https://fiverr.com/your_username" target="_blank">Fiverr Profile</a></span></div>
+          <div class="contact-item"><i class="fas fa-briefcase"></i><span><a href="https://fiverr.com/mong_swe_05" target="_blank">mong_swe_05</a></span></div>
         </div>
         <form class="contact-form" action="https://formspree.io/f/xlgzlaok" method="POST">
           <input type="text" name="name" placeholder="Your Name" required>
@@ -319,7 +318,7 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
-      <p class="copyright">&copy; 2024 Mong Swe Chai Marma. All rights reserved.</p>
+      <p class="copyright">&copy; 2026 Mong Swe Chai Marma. All rights reserved.</p>
     </div>
   </footer>
 
